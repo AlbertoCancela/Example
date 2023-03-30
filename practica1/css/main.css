@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('../images/pageLoader.gif') 50% 50% no-repeat #fefefe;
+}
+#contenedorPrincipal{
+    width: 80%;
+    background-color: #8b9fcc;
+    height: 910px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows:repeat(12,1fr);
+    grid-gap: 20px;
+    padding: 12px;
+    
+}
+#contenedorPrincipal > .cont{
+    border-radius: 8px;
+    box-shadow: 4px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.contenedorTabla{
+    padding: 10px;
+    grid-row: 4/13;
+    grid-column: 4/13;
+    background-color: #c7d2d6;
+    overflow: auto;
+}
+.contenedorBanner{
+    background-color: white;
+    grid-row: 1/13;
+    grid-column: 1/4;
+    display: flex;
+    flex-flow: column wrap;
+}
+.contenedorBanner > div{
+    margin-bottom: 10%;
+    border-radius: 8px;
+}
+.logo{
+    height: 10%;
+}
+.logo>img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+.usuarioSesion{
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+.pUser{
+    font-size: larger;
+    color: #30509e;
+    font-weight: bold;
+}
+.labelUsuario{
+    font-size: 25px;
+}
+.datosVarios{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.labelFecha{
+    font-size: 30px;
+}
+.terminarSesion{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorAgregar{
+    background-color: #30509e;
+    grid-row: 1/4;
+    grid-column: 4/10;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.contenedorAgregar > h4{
+    color: aliceblue;
+    text-shadow: 1px 1px black;
+    font-size: large;
+    text-align: center;
+}
+#botonDetallesProducto, #botonActualizarProducto{
+    width: 80px;
+}
+#añadirRegistro{
+    display: inline;
+    height:33px;
+    width: 75%;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+} 
+#unidadMedida{
+    width: 25%;
+}
+#spanUM{
+    width: auto;
+}
+#unidadMedidaContent{
+    display: flex;
+    flex-direction: row;
+}
+.contenedorEliminar{
+    grid-row: 1/4;
+    grid-column: 10/13;
+    background-color: #5cb85c;
+    padding: 45px;
+}
+.contenedorEliminar > h4{
+    color: white;
+    text-shadow: 1px 1px black;
+    font-size: large;
+    text-align: center;
+
+}
+#eliminarRegistro{
+    height: 40px;
+    width: 100%;
+}
