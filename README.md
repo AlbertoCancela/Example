@@ -1,2 +1,2 @@
-# Example
-Proyecto de prueba con archivos dummyes
+# Example...
+Proyecto de prueba con archivos dummies
